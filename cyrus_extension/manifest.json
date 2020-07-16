@@ -1,0 +1,21 @@
+ {
+    "name": "Cyrus Extension",
+    "description" : "Connect extension with node server",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": ["activeTab", "declarativeContent", "storage","tabs","notifications","http://*/","https://*/"],
+    "background": {
+      "scripts": ["js/socket.io.js","scripts/background.js"],
+      "persistent": false
+    },
+    "content_scripts": [{ 
+      "matches": ["https://*/*"],
+      "js":["js/jquery.min.js","scripts/content.js"],
+      "run_at": "document_start"
+    }],
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": "images/hello_extensions.png"
+    }
+  }
+      

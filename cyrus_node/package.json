@@ -1,0 +1,21 @@
+{
+  "name": "simple-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "boilerplate",
+    "express.js",
+    "http-server"
+  ],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.3.0"
+  }
+}
